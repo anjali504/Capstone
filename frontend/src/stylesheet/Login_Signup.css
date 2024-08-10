@@ -1,0 +1,134 @@
+.login-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-container {
+  flex: 1;
+  margin: 15px;
+  background: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-container button {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-container button.active {
+  border-bottom: 2px solid #000;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px !important;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #333;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.back-login {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .form-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-container button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h2,
+  p {
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  form {
+    margin: 10px;
+  }
+}

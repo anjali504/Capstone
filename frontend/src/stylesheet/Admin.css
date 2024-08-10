@@ -1,0 +1,165 @@
+/* Admin.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container-admin {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.admin-add {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-add:hover {
+    background-color: #0056b3;
+}
+
+#add-event-form {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+#event-list {
+    padding: 20px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.event-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.event-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.date-time-container {
+    display: flex;
+    align-items: center;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.date-time svg {
+    margin-right: 5px;
+}
+
+.venue,
+.contact-details,
+.ticket-info,
+.description {
+    margin-top: 10px;
+}
+
+.event-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.event-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-buttons button:first-child {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.event-buttons button:first-child:hover {
+    background-color: #e0a800;
+}
+
+.event-buttons button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.event-buttons button:last-child:hover {
+    background-color: #c82333;
+}
