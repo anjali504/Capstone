@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:5000',
+      target: 'https://capstone-a5ic.onrender.com:5000',
       changeOrigin: true,
     })
   );
