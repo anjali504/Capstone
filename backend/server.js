@@ -17,7 +17,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: 'https://capstone-1-ivoi.onrender.com/', 
+  origin: 'https://capstone-1-ivoi.onrender.com', 
   optionsSuccessStatus: 200,
 };
 
