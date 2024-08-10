@@ -8,7 +8,7 @@ const OrganizerBookings = ({ organizerId }) => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await fetch(`https://capstone-a5ic.onrender.com:5000/api/bookings/organizer/${organizer._id}`);
+        const response = await fetch(`https://capstone-a5ic.onrender.com/api/bookings/organizer/${organizer._id}`);
         const data = await response.json();
         setBookings(data);
       } catch (error) {

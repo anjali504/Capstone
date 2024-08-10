@@ -39,7 +39,7 @@ const Login = () => {
       }
 
       try {
-        const backend = 'https://capstone-a5ic.onrender.com:5000';
+        const backend = 'https://capstone-a5ic.onrender.com';
         const response = await fetch(`${backend}/api/auth/forgot-password`, {
           method: 'POST',
           headers: {
@@ -66,7 +66,7 @@ const Login = () => {
     }
 
     try {
-      const backend = 'https://capstone-a5ic.onrender.com:5000';
+      const backend = 'https://capstone-a5ic.onrender.com';
       const response = await fetch(
         isLogin ? `${backend}/api/auth/login` : `${backend}/api/auth/register`,
         {

@@ -27,7 +27,7 @@ function OrganizerDashboard() {
     const [editMode, setEditMode] = useState(false);
     const [editId, setEditId] = useState(null);
     const [image, setImage] = useState(null);
-    const backend = "https://capstone-a5ic.onrender.com:5000";
+    const backend = "https://capstone-a5ic.onrender.com";
 
     useEffect(() => {
         fetchEvents();

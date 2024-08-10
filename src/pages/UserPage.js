@@ -22,7 +22,7 @@ const UserPage = () => {
   const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
-    fetch('https://capstone-a5ic.onrender.com:5000/api/user/users')
+    fetch('https://capstone-a5ic.onrender.com/api/user/users')
       .then(response => response.json())
       .then(data => {
         const userList = data.filter(user => user.role === 'user');
@@ -52,7 +52,7 @@ const UserPage = () => {
   };
 
   const handleDeleteUser = () => {
-    fetch('https://capstone-a5ic.onrender.com:5000/api/user/delete', {
+    fetch('https://capstone-a5ic.onrender.com/api/user/delete', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ const UserPage = () => {
   };
 
   const handleEditUser = () => {
-    fetch('https://capstone-a5ic.onrender.com:5000/api/user/update', {
+    fetch('https://capstone-a5ic.onrender.com/api/user/update', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
