@@ -52,7 +52,7 @@ Before you start, ensure you have the following installed on your machine:
 
 ## Additional Information
 
-- The frontend is typically served on `http://localhost:3000` by default.
+- The frontend is typically served on `https://capstone-1-ivoi.onrender.com/` by default.
 - The backend is typically served on `http://localhost:5000` by default (or another port specified in your backend configuration).
 
 Make sure both servers are running simultaneously for the application to function correctly.
