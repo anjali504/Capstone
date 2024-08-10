@@ -10,7 +10,7 @@ const EventDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/events/get/${id}`);
+        const res = await fetch(`https://capstone-a5ic.onrender.com:5000/api/events/get/${id}`);
         const result = await res.json();
         setData(result);
         console.log(result);

@@ -17,7 +17,7 @@ const CheckoutForm = ({ cartItems, totalPrice }) => {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/create-payment-intent', {
+    fetch('https://capstone-a5ic.onrender.com:5000/create-payment-intent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount: totalPrice * 100 }), // amount in cents
@@ -65,7 +65,7 @@ const CheckoutForm = ({ cartItems, totalPrice }) => {
     } else if (paymentIntent.status === 'succeeded') {
       try {
         for (const item of cartItems) {
-          const response = await fetch('http://localhost:5000/api/events/reduce-tickets', {
+          const response = await fetch('https://capstone-a5ic.onrender.com:5000/api/events/reduce-tickets', {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ const CheckoutForm = ({ cartItems, totalPrice }) => {
         }
   
         // Save the booking details
-        await fetch('http://localhost:5000/api/bookings', {
+        await fetch('https://capstone-a5ic.onrender.com:5000/api/bookings', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

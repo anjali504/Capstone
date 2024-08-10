@@ -28,7 +28,7 @@ const Events = () => {
 
   const fetchData = async (query = "") => {
     try {
-      const res = await fetch(`http://localhost:5000/api/events/get${query ? `?query=${query}` : ""}`);
+      const res = await fetch(`https://capstone-a5ic.onrender.com:5000/api/events/get${query ? `?query=${query}` : ""}`);
       const result = await res.json();
       setData(result);
     } catch (error) {

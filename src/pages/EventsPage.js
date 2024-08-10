@@ -22,7 +22,7 @@ const EventsPage = () => {
   const [currentEvent, setCurrentEvent] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/events/get')
+    fetch('https://capstone-a5ic.onrender.com:5000/api/events/get')
       .then(response => response.json())
       .then(data => setEvents(data))
       .catch(error => console.error('Error fetching events:', error));
@@ -47,7 +47,7 @@ const EventsPage = () => {
   };
 
   const handleDeleteEvent = () => {
-    fetch(`http://localhost:5000/api/events/${currentEvent._id}`, {
+    fetch(`https://capstone-a5ic.onrender.com:5000/api/events/${currentEvent._id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
